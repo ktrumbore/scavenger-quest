@@ -1,0 +1,296 @@
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600&family=Exo:wght@400;700&family=Fauna+One&display=swap');
+
+*,*::before,*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Style Guide */
+
+:root {
+    --sky: #95BEF2;
+    --tan: #CA7667;
+    --coin: #F29A16;
+    --ocean: #29257B;
+    --tar: #211915;
+}
+
+body {
+    font-family: 'Fauna One', serif;
+}
+
+h1 {
+    color: var(--ocean);
+    font-family: 'Cinzel', serif;
+    font-weight:600;
+    font-size:4em;
+    line-height:1em;
+}
+
+h2 {
+    color: var(--ocean);
+    font-family: 'Cinzel', serif;
+    font-weight:600;
+    font-size:3em;
+    line-height:1em;
+}
+
+h3 {
+    color:var(--sky);
+    font-size:1.3em;
+    margin-top:.5em;
+}
+
+p {
+    color:var(--tar);
+    font-size:1em;
+    margin-top:1em;
+    margin-bottom:1em;
+    line-height:1.5em;
+}
+
+button {
+    padding: 5px 40px;
+    border-radius: 25px;
+    border: solid var(--coin) 4px;
+    background:transparent;
+    color: var(--coin);
+    font-family: 'Exo', sans-serif;
+    font-weight:bold;
+    letter-spacing:1px;
+    font-size: 1em;
+    cursor: pointer;
+}
+
+button:hover {
+    background: var(--coin);
+    color:white;
+    transition-duration:.2s;
+}
+
+/* WELCOME TO MOBILE */
+
+.logo img {
+    height: fit;
+    width: 240px;
+    margin-top:1%;
+}
+
+/* Navigation */
+
+.navigation {
+    background:white;
+    text-align:center;
+    padding: 1em;
+    position: sticky;
+    width:100%;
+    top:0;
+    z-index:999;
+    padding-left:20%;
+    padding-right:20%;
+}
+
+.nav-toggle {
+    display:none;
+}
+
+.nav-toggle-label {
+    position:absolute;
+    top:0;
+    left:0;
+    margin-left:2em;
+    height:100%;
+    display:flex;
+    align-items:center;
+}
+
+.nav-toggle-label span {
+    color:var(--ocean);
+    font-size:2em;
+    cursor: pointer;
+}
+
+nav {
+    position:absolute;
+    text-align:left;
+    top:100%;
+    left:0;
+    background:white;
+    width:100%;
+    transform: scale(1,0);
+    transition: transform 400ms ease-in-out;
+    transform-origin:top;
+}
+
+nav ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+nav li {
+    margin-bottom:1em;
+    margin-left:1em;
+    margin-top:1em;
+}
+
+nav a {
+    color:var(--ocean);
+    text-decoration:none;
+    font-size:1.1em;
+    opacity:0;
+    transition: opacity 150ms ease-in-out;
+}
+
+nav a:hover {
+    color:var(--tan);
+}
+
+.nav-toggle:checked ~nav {
+    transform: scale(1,1);
+}
+
+.nav-toggle:checked ~nav a {
+    opacity:1;
+    transition: opacity 250ms ease-in-out 200ms;
+}
+
+.navigation button {
+    display:none;
+    margin-top:0;
+}
+
+/* Hero */
+
+.hero {
+    height:80vh;
+    background-image: url(images/mobile-hero-dock.jpg);
+    background-size:cover;
+    background-position:top;
+}
+
+.hero-text {
+    padding-top:7em;
+    text-align:center;
+}
+
+.hero-text button {
+    margin:.5em;
+    margin-top:2em;
+}
+
+span {
+    color:var(--tan);
+}
+
+/* Website Body */
+
+.content {
+    padding-left:10%;
+    padding-right:10%;
+}
+
+.welcome {
+    padding-top:3em;
+}
+
+.weather {
+    display:flex;
+}
+
+.event-agenda {
+    display:block;
+  }  
+
+.card {
+    text-align:center;
+    width: 88%;
+    margin: 0 auto;
+}
+  
+.card img {
+    height: fit;
+    width: 90%;
+    margin-top:2.4em;
+}
+
+
+/* WELCOME TO DESKTOP */
+
+@media screen and (min-width: 900px) {
+  
+  .nav-toggle-label {
+    display:none;
+  }
+  
+  .navigation {
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding-left:5%;
+    padding-right:5%;
+  }
+  
+  .navigation button {
+    display:initial;
+  }
+  
+  nav {
+    all:unset;
+  }
+  
+  nav ul {
+    display:flex;
+  }
+  
+  nav li {
+    margin-right:1.4em;
+  }
+  
+  nav a {
+    opacity:1;
+    position:relative;
+  }
+
+  .hero {
+    height:95vh;
+    background-image: url(images/hero-dock.jpg);
+    background-position:70%;
+  }
+
+  h1 {
+    font-size:6em;
+  }
+
+  .hero-text {
+    width:55%;
+    padding-top:10em;
+    padding-left:10%;
+    text-align:left;
+  }
+  
+  .event-agenda {
+    display:flex;
+    margin: 2.4em;
+    margin-top:0;
+    gap:2em;
+  }
+  
+  .card {
+  text-align:left;
+  }
+  
+  .card img {
+    width:100%;
+  }
+  
+  h2 {
+    font-size:1.1em;
+  }
+  
+  p {
+    font-size:.9em;
+  }
+  
+}
