@@ -69,6 +69,7 @@ button {
     letter-spacing:1px;
     font-size: 1em;
     cursor: pointer;
+    margin-top:1em;
 }
 
 button:hover {
@@ -200,8 +201,7 @@ span {
 }
 
 .welcome {
-    padding-top:4em;
-    padding-bottom:4em;
+    margin-top:4em;
 }
 
 .weather {
@@ -213,32 +213,38 @@ span {
   padding-top:1em;
 }
 
+.transparent-card {
+  height: 500px;
+}
+
+.transparent-card img {
+  object-fit:cover;
+  width:100%;
+  height:100%;
+  padding-bottom:4em;
+}
+
+.app .transparent-card {
+  height:600px;
+}
+
+.video-introduction {
+  margin-bottom:4em;
+}
+
 .text-card {
   margin-bottom:2em;
 }
 
-.map-card {
-  height: 500px;
-}
-
-.map-card img {
-  object-fit:cover;
-  width:100%;
-  height:100%;
-}
-
 .video-card {
-  padding-top:3em;
-}
-
-.video-introduction {
-  padding-bottom:5em;
+  padding-top:4em;
+  margin-bottom:6em;
 }
 
 .event-agenda {
-    display:block;
-    padding-top:2em;
-  }  
+  display:block;
+  margin-bottom:2em;
+}  
 
 .event-agenda h2 {
   text-align:center;
@@ -254,18 +260,38 @@ span {
 .card img {
   height: fit;
   width: 100%;
-  margin-bottom:2.4em;
-  border-radius:20px;
+  border-radius:10px;
+  margin-bottom:1.5em;
 }
 
 .card p {
   text-align:left;
 }
 
-.card button {
-  margin-top:1em;
+.app {
+  margin-bottom:6em;
 }
 
+.app-cards {
+  margin-bottom:2em;
+}
+
+.banner-text {
+  text-align:center;
+  margin: 0 auto;
+  padding:5em 10% 5em 10%;
+  background-image: url(images/dark-ocean-banner.jpg);
+  background-size:cover;
+  margin-bottom:4em;
+}
+
+.banner-text span { 
+  color:white;
+}
+
+.email-list .banner-text {
+  background-image: url(images/light-sky-banner.jpg);
+}
 
 /* WELCOME TO DESKTOP */
 
@@ -343,7 +369,7 @@ span {
     padding:5em;
   }
   
-  .map-card {
+  .transparent-card {
     margin-top:3em;
   }
 
@@ -355,6 +381,11 @@ span {
 
   .video-card {
     padding-top:0;
+  }
+
+  iframe {
+    width:500px;
+    height:335px;
   }
 
   .agenda-cards {
