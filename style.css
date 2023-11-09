@@ -24,7 +24,7 @@ h1 {
     color: var(--ocean);
     font-family: 'Cinzel', serif;
     font-weight:600;
-    font-size:4em;
+    font-size:3.8em;
     line-height:1em;
 }
 
@@ -224,10 +224,6 @@ span {
   padding-bottom:4em;
 }
 
-.app .transparent-card {
-  height:600px;
-}
-
 .video-introduction {
   margin-bottom:4em;
 }
@@ -248,7 +244,7 @@ span {
 
 .event-agenda h2 {
   text-align:center;
-  margin-bottom:1em;
+  margin-bottom:0.8em;
 }
 
 .card {
@@ -261,7 +257,7 @@ span {
   height: fit;
   width: 100%;
   border-radius:10px;
-  margin-bottom:1.5em;
+  margin-bottom:1.8em;
 }
 
 .card p {
@@ -269,7 +265,17 @@ span {
 }
 
 .app {
-  margin-bottom:6em;
+  margin-bottom:5em;
+}
+
+.navigator-button {
+  text-align:center;
+}
+
+.app .transparent-card {
+  margin-top:1em;
+  margin-bottom:1em;
+  height:600px;
 }
 
 .app-cards {
@@ -279,7 +285,7 @@ span {
 .banner-text {
   text-align:center;
   margin: 0 auto;
-  padding:5em 10% 5em 10%;
+  padding:6em 10% 6em 10%;
   background-image: url(images/dark-ocean-banner.jpg);
   background-size:cover;
   margin-bottom:4em;
@@ -289,9 +295,119 @@ span {
   color:white;
 }
 
-.email-list .banner-text {
-  background-image: url(images/light-sky-banner.jpg);
+.image-grid {
+  display:grid;
+  grid-template-columns: repeat(2, auto);
+  gap:1.2em;
+  grid-auto-rows:minmax(100px,auto);
+  margin-bottom:4.5em;
 }
+
+.image-grid > div {
+  padding:1em;
+  border-radius:10px;
+  background-size:cover;
+  background-repeat: no-repeat;
+}
+
+.grid-spread {
+  grid-column: 1/3;
+  height:300px;
+  width:auto;
+  background-image: url(images/old-city-street.jpg);
+  background-position:right;
+}
+
+.grid-left {
+  height:300px;
+  background-image: url(images/exploring-woman.jpg);
+}
+
+.grid-right {
+  height:300px;
+  background-image: url(images/pirate-coin.jpg);
+  background-position:center;
+}
+
+.email-list .banner-text {
+  padding-bottom:5em;
+  background-image: url(images/light-sky-banner.jpg);
+  margin-bottom:0;
+}
+
+.form {
+  padding:1em;
+  padding-top:2em;
+}
+
+input {
+  width:70%;
+  border: 0;
+  padding:1em;
+  margin-right:-0.5em;
+}
+
+::placeholder {
+  font-size:1.2em;
+}
+
+#submit {
+  padding:.75em;
+  padding-top:.6em;
+  border:0 none;
+  cursor:pointer;
+  border-radius: 0;
+  background:var(--coin);
+  color:white;
+}
+
+#submit:hover {
+  background:#E96F2B;
+}
+
+.footer {
+  background: var(--ocean);
+  text-align:center;
+  padding:3em;
+}
+
+.footer-logo {
+  padding-bottom:1.5em;
+  padding-top:1em;
+}
+
+.footer-nav ul {
+  display:flex;
+  list-style: none;
+  justify-content:center;
+}
+
+.footer-nav li {
+  margin-left:1em;
+  margin-right:1em;
+  padding-bottom:1.5em;
+}
+
+.footer-nav a {
+  text-decoration:none;
+  color:white;
+}
+
+.footer-nav a:hover {
+  color:var(--sky);
+}
+
+.footer-social img {
+  padding: 1em .5em 1em .5em;
+  height: 75px;
+}
+
+.footer-contact p {
+  color:white;
+  font-size:.85em;
+}
+
+
 
 /* WELCOME TO DESKTOP */
 
