@@ -1,39 +1,39 @@
 @import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600&family=Exo:wght@400;700&family=Fauna+One&display=swap');
 
 *,*::before,*::after {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 /* Style Guide */
 
 :root {
-    --sky: #95BEF2;
-    --tan: #CA7667;
-    --coin: #F29A16;
-    --ocean: #29257B;
-    --tar: #211915;
+  --sky: #95BEF2;
+  --tan: #CA7667;
+  --coin: #F29A16;
+  --ocean: #29257B;
+  --tar: #211915;
 }
 
 body {
-    font-family: 'Fauna One', serif;
+  font-family: 'Fauna One', serif;
 }
 
 h1 {
-    color: var(--ocean);
-    font-family: 'Cinzel', serif;
-    font-weight:600;
-    font-size:3.8em;
-    line-height:1em;
+  color: var(--ocean);
+  font-family: 'Cinzel', serif;
+  font-weight:600;
+  font-size:3.8em;
+  line-height:1em;
 }
 
 h2 {
-    color: var(--ocean);
-    font-family: 'Cinzel', serif;
-    font-weight:600;
-    font-size:3em;
-    line-height:1em;
+  color: var(--ocean);
+  font-family: 'Cinzel', serif;
+  font-weight:600;
+  font-size:3em;
+  line-height:1em;
 }
 
 h3 {
@@ -45,166 +45,169 @@ h3 {
 }
 
 h4 {
-    color:var(--sky);
-    font-size:1.3em;
-    margin-top:.5em;
+  color:var(--sky);
+  font-size:1.3em;
+  margin-top:.5em;
+  line-height:1.4em;
 }
 
 p {
-    color:var(--tar);
-    font-size:1em;
-    margin-top:2em;
-    margin-bottom:1em;
-    line-height:1.5em;
+  color:var(--tar);
+  font-size:1em;
+  margin-top:2em;
+  margin-bottom:1em;
+  line-height:1.5em;
 }
 
 button {
-    padding: 5px 40px;
-    border-radius: 25px;
-    border: solid var(--coin) 4px;
-    background:transparent;
-    color: var(--coin);
-    font-family: 'Exo', sans-serif;
-    font-weight:bold;
-    letter-spacing:1px;
-    font-size: 1em;
-    cursor: pointer;
-    margin-top:1em;
+  padding: 5px 40px;
+  border-radius: 25px;
+  border: solid var(--coin) 4px;
+  background:transparent;
+  color: var(--coin);
+  font-family: 'Exo', sans-serif;
+  font-weight:bold;
+  letter-spacing:1px;
+  font-size: 1em;
+  cursor: pointer;
+  margin-top:1em;
 }
 
 button:hover {
-    background: var(--coin);
-    color:white;
-    transition-duration:.2s;
+  background: var(--coin);
+  color:white;
+  transition-duration:.2s;
 }
 
 /* WELCOME TO MOBILE */
 
 .logo img {
-    height: fit;
-    width: 240px;
-    margin-top:1%;
+  height: fit;
+  width: 240px;
+  margin-top:1%;
 }
 
 /* Navigation */
 
 .navigation {
-    background:white;
-    text-align:center;
-    padding: 1em;
-    position: sticky;
-    width:100%;
-    top:0;
-    z-index:999;
-    padding-left:20%;
-    padding-right:20%;
+  background:white;
+  text-align:center;
+  padding: 1em;
+  position: sticky;
+  width:100%;
+  top:0;
+  z-index:999;
+  padding-left:20%;
+  padding-right:20%;
 }
 
 .nav-toggle {
-    display:none;
+  display:none;
 }
 
 .nav-toggle-label {
-    position:absolute;
-    top:0;
-    left:0;
-    margin-left:2em;
-    height:100%;
-    display:flex;
-    align-items:center;
+  position:absolute;
+  top:0;
+  left:0;
+  margin-left:2em;
+  height:100%;
+  display:flex;
+  align-items:center;
 }
 
 .nav-toggle-label span {
-    color:var(--ocean);
-    font-size:2em;
-    cursor: pointer;
+  color:var(--ocean);
+  font-size:2em;
+  cursor: pointer;
 }
 
 nav {
-    position:absolute;
-    text-align:left;
-    top:100%;
-    left:0;
-    background:white;
-    width:100%;
-    transform: scale(1,0);
-    transition: transform 400ms ease-in-out;
-    transform-origin:top;
+  position:absolute;
+  text-align:left;
+  top:100%;
+  left:0;
+  background:white;
+  width:100%;
+  transform: scale(1,0);
+  transition: transform 400ms ease-in-out;
+  transform-origin:top;
 }
 
 nav ul {
-    margin: 0;
-    padding: 0;
-    list-style: none;
+  margin: 0;
+  padding: 0;
+  list-style: none;
 }
 
 nav li {
-    margin-bottom:1em;
-    margin-left:1em;
-    margin-top:1em;
+  margin-bottom:1em;
+  margin-left:1em;
+  margin-top:1em;
 }
 
 nav a {
-    color:var(--ocean);
-    text-decoration:none;
-    font-size:1.1em;
-    opacity:0;
-    transition: opacity 150ms ease-in-out;
+  color:var(--ocean);
+  text-decoration:none;
+  font-size:1.1em;
+  opacity:0;
+  transition: opacity 150ms ease-in-out;
 }
 
 nav a:hover {
-    color:var(--tan);
+  color:var(--tan);
 }
 
 .nav-toggle:checked ~nav {
-    transform: scale(1,1);
+  transform: scale(1,1);
 }
 
 .nav-toggle:checked ~nav a {
-    opacity:1;
-    transition: opacity 250ms ease-in-out 200ms;
+  opacity:1;
+  transition: opacity 250ms ease-in-out 200ms;
 }
 
 .navigation button {
-    display:none;
-    margin-top:0;
+  display:none;
+  margin-top:0;
 }
 
 /* Hero */
 
 .hero {
-    height:80vh;
-    background-image: url(images/mobile-hero-dock.jpg);
-    background-size:cover;
-    background-position:top;
+  height:80vh;
+  background-image: url(images/mobile-hero-dock.jpg);
+  background-size:cover;
+  background-position:top;
 }
 
 .hero-text {
-    padding-top:8em;
-    text-align:center;
+  padding-top:8em;
+  text-align:center;
 }
 
 .hero-text button {
-    margin:.5em;
-    margin-top:2em;
+  margin:.5em;
+  margin-top:2em;
 }
 
 span {
-    color:var(--tan);
+  color:var(--tan);
 }
 
 /* Website Body */
 
 .content {
-    padding: 0 10%;
+  padding: 0 10%;
 }
 
+/* Welcome */
+
 .welcome {
-    margin-top:4em;
+  margin-top:4em;
 }
 
 .weather {
-    display:flex;
+  display:flex;
 }
 
 .weather img {
@@ -223,6 +226,8 @@ span {
   padding-bottom:4em;
 }
 
+/* Your Quest */
+
 .video-introduction .text-card {
   margin-bottom:4em;
   padding: 0 10%;
@@ -240,6 +245,8 @@ span {
   background-size: 65%;
   height: 450px;
 }
+
+/* Event Agenda */
 
 .event-agenda {
   display:block;
@@ -267,6 +274,8 @@ span {
 .card p {
   text-align:left;
 }
+
+/* Our Navigator */
 
 .app {
   padding-top:1em;
@@ -299,6 +308,8 @@ span {
   margin-bottom:2em;
 }
 
+/* Register Today */
+
 .banner-text {
   text-align:center;
   margin: 0 auto;
@@ -310,6 +321,12 @@ span {
 
 .banner-text span { 
   color:white;
+}
+
+/* Chart Your Course */
+
+.final-sell .text-card {
+  padding-bottom:2em;
 }
 
 .image-grid {
@@ -345,6 +362,8 @@ span {
   background-image: url(images/pirate-coin.jpg);
   background-position:center;
 }
+
+/* Stay In The Loop */
 
 .email-list .banner-text {
   padding-bottom:5em;
@@ -382,6 +401,8 @@ input {
   background:#E96F2B;
 }
 
+/* Footer */
+
 .footer {
   background: var(--ocean);
   text-align:center;
@@ -405,7 +426,7 @@ input {
   padding-bottom:1.5em;
 }
 
-.footer-nav a {
+.footer a {
   text-decoration:none;
   color:white;
 }
@@ -419,11 +440,45 @@ input {
   height: 75px;
 }
 
+.footer-social img:hover {
+  transform: scale(108%);
+  transition: transform 200ms ease-in-out;
+  cursor:pointer;
+}
+
 .footer-contact p {
   color:white;
   font-size:.85em;
 }
 
+/* FAQ */
+
+.question-card {
+  margin-bottom:4em;
+}
+
+.question-card img {
+  height: 60px;
+  width: 60px;
+  margin-left: -0.75em;
+  margin-bottom: 0.75em;
+}
+
+.question-card h4 {
+  color: var(--ocean);
+}
+
+.faq-images img {
+  border-radius: 10px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100%;
+  margin-bottom:2em;
+}
+
+.faq-images {
+  margin-bottom:2em;
+}
 
 
 /* WELCOME TO DESKTOP */
@@ -500,6 +555,10 @@ input {
 
   .welcome .text-card {
     padding:5em;
+    background-image: url(images/icon-ship-wheel.svg);
+    background-repeat: no-repeat;
+    background-position: 0% 14%;
+    background-size: 10.5%;
   }
 
   .text-card {
@@ -544,6 +603,10 @@ input {
     text-align:left;
   }
 
+  .card-button {
+    text-align:center;
+  }
+
   .app {
     display:flex;
     flex-direction:row-reverse;
@@ -552,6 +615,10 @@ input {
   .app .text-card {
     padding: 0 15%;
     margin-top:4em;
+    background-image: url(images/icon-x-treasure.svg);
+    background-repeat: no-repeat;
+    background-position: 18% -1%;
+    background-size: 8%;
   }
 
   .app .transparent-card {
@@ -621,6 +688,26 @@ input {
     grid-column: 3/4;
     text-align:right;
     padding-right:3em;
+  }
+
+  .banner-emphasis {
+    font-size:1.2em;
+  }
+  
+  .faq-cards {
+    display:grid;
+    grid-template-columns: repeat(3, auto);
+    gap:3.75em;
+  }
+
+  .question-card {
+    margin-bottom:0.25em;
+  }
+  
+  .faq-images {
+    margin-top:3em;
+    display:flex;
+    gap:2em;
   }
 
 }
