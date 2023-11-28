@@ -48,7 +48,13 @@ h4 {
   color:var(--sky);
   font-size:1.3em;
   margin-top:.5em;
-  line-height:1.4em;
+  line-height:1.2em;
+}
+
+h5 {
+  color: var(--ocean);
+  font-size:1.5em;
+  line-height:0;
 }
 
 p {
@@ -77,6 +83,10 @@ button:hover {
   background: var(--coin);
   color:white;
   transition-duration:.2s;
+}
+
+a {
+  text-decoration:none;
 }
 
 /* WELCOME TO MOBILE */
@@ -480,6 +490,47 @@ input {
   margin-bottom:2em;
 }
 
+/* Team Select */
+
+.team-selection {
+  background-image: url(images/light-sky-background.png);
+  padding-bottom:4em;
+}
+
+.team-selection .content {
+  text-align:center;
+  padding-top:6em;
+}
+
+.team-card {
+  margin: 0 auto;
+  margin-bottom:4em;
+  margin-top:6em;
+  padding:40px;
+  background:white;
+  border-radius:10px;
+  width:80%;
+}
+
+.team-card img {
+  display:block;
+  margin: auto;
+}
+
+.team-card button {
+  display:block;
+  margin: auto;
+  margin-top:2em;
+}
+
+.team-card:hover {
+  transform: scale(102%);
+  transition: .2s ease-in-out;
+}
+
+/* Tickets */
+
+
 
 /* WELCOME TO DESKTOP */
 
@@ -708,6 +759,16 @@ input {
     margin-top:3em;
     display:flex;
     gap:2em;
+  }
+
+  .team-card-options {
+    display:flex;
+    justify-content:center;
+  }
+
+  .team-card {
+    width:30%;
+    margin: 4em 4em;
   }
 
 }
