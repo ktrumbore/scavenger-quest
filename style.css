@@ -394,7 +394,8 @@ input {
 }
 
 ::placeholder {
-  font-size:1.2em;
+  font-size:1.1em;
+  font-family: 'Fauna One', serif;
 }
 
 #submit {
@@ -530,7 +531,52 @@ input {
 
 /* Tickets */
 
+label {
+  color: var(--tan);
+  display: block;
+  text-transform:uppercase;
+  padding-bottom:0.75em;
+}
 
+.ticket-form input {
+  border: 1px solid var(--tar);
+  border-radius: 8px;
+  padding:1.2em;
+  padding-bottom:1em;
+  margin-bottom:4em;
+  width:100%;
+}
+
+.ticket-form select {
+  border: 1px solid var(--tar);
+  border-radius: 8px;
+  padding:1.2em;
+  padding-bottom:1em;
+  margin-bottom:4em;
+  width:100%;
+}
+
+.drop-down-forms {
+  display:flex;
+  gap:8em;
+}
+
+.drop-down-forms select {
+  width: 210%;
+}
+
+.ticket-amount select {
+  margin-bottom:0.5em;
+}
+
+.ticket-buttons {
+  text-align:center;
+  margin-bottom:4em;
+}
+
+.ticket-buttons button {
+  margin-top:2em;
+}
 
 /* WELCOME TO DESKTOP */
 
@@ -769,6 +815,56 @@ input {
   .team-card {
     width:30%;
     margin: 4em 4em;
+  }
+
+  .ticket-form {
+    padding: 0 10%;
+  }
+  
+  .form-row-1 {
+    display:flex;
+    gap:2em;
+  }
+
+  .name {
+    width:100%;
+  }
+
+  .form-row-2 {
+    display:flex;
+    gap:2em;
+  }
+
+  .dob {
+    width:30%;
+  }
+
+  .email {
+    width:70%;
+  }
+
+  .form-row-3 {
+    display:flex;
+    gap:2em;
+    margin-bottom:-1em;
+  }
+
+  .drop-down-forms {
+    display:flex;
+    gap:3em;
+  }
+  
+  .drop-down-forms select {
+    width: 120%;
+  }
+
+  .registration-method {
+    width:60%;
+    margin-left:1em;
+  }
+
+  .ticket-buttons button {
+    margin:3em 1.25em 1em 1.25em;
   }
 
 }
