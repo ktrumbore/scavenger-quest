@@ -246,13 +246,15 @@ span {
 .video-card {
   padding-top:4em;
   padding: 0 10%;
+  margin-left:10em;
 }
 
 .video-introduction .background-shape {
   background: url(images/bg-shape-medium.svg);
   background-repeat: no-repeat;
   background-position:0% 0%;
-  background-size: 65%;
+  margin-left:-11em;
+  background-size: 90%;
   height: 450px;
 }
 
@@ -635,13 +637,13 @@ label {
     height:95vh;
     background-image: url(images/hero-dock.jpg);
     background-position:70%;
+    display: flex;
+    align-items: center;
   }
 
   .hero-text {
     width:55%;
-    padding-top:10em;
-    padding-left:10%;
-    text-align:left;
+    padding:0;
   }
 
   .welcome {
@@ -655,7 +657,7 @@ label {
     background-image: url(images/icon-ship-wheel.svg);
     background-repeat: no-repeat;
     background-position: 0% 14%;
-    background-size: 10.5%;
+    background-size: 10%;
   }
 
   .text-card {
@@ -675,14 +677,16 @@ label {
 
   .video-card {
     padding: 0 30%;
+    margin-left:0em;
   }
 
   .video-introduction .background-shape {
-    background-size:70%;
+    background-size:100%;
+    background-position:0% 50%;
   }
 
   .video-introduction .text-card {
-    width:65%;
+    width:62%;
   }
 
   iframe {
@@ -714,17 +718,17 @@ label {
     margin-top:4em;
     background-image: url(images/icon-x-treasure.svg);
     background-repeat: no-repeat;
-    background-position: 18% -1%;
-    background-size: 8%;
+    background-position: 18% 0%;
+    background-size: 10%;
   }
 
   .app .transparent-card {
     width:500px;
-    margin-right:6em;
+    margin-right:8em;
   }
 
   .app .background-shape {
-    background-size:100%;
+    background-size:90%;
     width:620px;
   }
 
@@ -763,9 +767,9 @@ label {
   }
 
   .footer {
-    padding-left:5em;
     padding-top:4em;
-    text-align:left;
+    padding-left: 0em;
+    padding-right: 0em;
     display:grid;
     grid-template-columns: repeat(3, auto);
     gap:1em 1em 0.75em;
@@ -773,18 +777,14 @@ label {
   }
 
   .footer-nav ul {
+    padding:0;
     padding-top:1.75em;
-    padding-left:5em;
-  }
-
-  .footer-social {
-    margin-left:9.5em;
   }
 
   .footer-contact {
-    grid-column: 3/4;
-    text-align:right;
-    padding-right:3em;
+    grid-column: 1/4;
+    text-align:center;
+    margin-left:3em;
   }
 
   .banner-emphasis {
@@ -865,6 +865,42 @@ label {
 
   .ticket-buttons button {
     margin:3em 1.25em 1em 1.25em;
+  }
+
+}
+
+/* WELCOME TO DISPLAY SCREEN */
+
+@media screen and (min-width: 1800px) {
+
+  .welcome .text-card {
+    background-position: 0% 15%;
+    background-size: 8%;
+    padding-right:10em;
+    width:70%;
+  }
+
+  .video-introduction .background-shape {
+    background-position:0% 80%;
+  }
+
+  .video-introduction .text-card {
+    width:68%;
+  }
+
+  .app .text-card {
+    padding: 0 8% 0 15%;
+    background-position: 18% 0%;
+    background-size: 6%;
+  }
+
+  .app .transparent-card {
+    height: 100%;
+  }
+
+  .app .background-shape {
+    background-size:90%;
+    width:800px;
   }
 
 }
