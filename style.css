@@ -185,19 +185,34 @@ nav a:hover {
 
 .hero {
   height:80vh;
-  background-image: url(images/mobile-hero-dock.jpg);
+  width:92%;
+  margin: 0 auto;
+  background-image: url(images/scavengerquest-hero.jpg);
   background-size:cover;
   background-position:top;
+  border-radius:10px;
 }
 
 .hero-text {
-  padding-top:8em;
+  padding-top:5em;
   text-align:center;
 }
 
 .hero-text button {
   margin:.5em;
   margin-top:2em;
+  border: solid var(--coin) 4px;
+  background: rgb(250, 250, 250, .60);
+  color: var(--coin);
+}
+
+.hero-text button:hover {
+  background: var(--coin);
+  color:white;
+}
+
+.hero span {
+  color:#fff;
 }
 
 span {
@@ -634,16 +649,19 @@ label {
   }
 
   .hero {
-    height:95vh;
-    background-image: url(images/hero-dock.jpg);
-    background-position:70%;
+    height:85vh;
+    background-position:60%;
     display: flex;
-    align-items: center;
   }
 
   .hero-text {
     width:55%;
-    padding:0;
+    text-align:left;
+    padding-left:4em;
+  }
+
+  .hero h1 {
+    padding-bottom:28px;
   }
 
   .welcome {
